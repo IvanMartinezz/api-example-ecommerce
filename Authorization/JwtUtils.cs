@@ -46,16 +46,6 @@ namespace DemoAPI.Authorization
             return tokenReturn;
         }
 
-
-       /* var issuer = builder.Configuration["Jwt:Issuer"];
-        var audience = builder.Configuration["Jwt:Audience"];
-        (builder.Configuration["Jwt:Key"]);
-        var tokenDescriptor = new SecurityTokenDescriptor
-        {
-                Issuer = issuer,
-            Audience = audience,
-        };*/
-
         public int? ValidateToken(string token)
         {
             if (token == null)
